@@ -91,18 +91,6 @@ App runs at `http://localhost:5173`
 
 ---
 
-## Deployment
-
-| Part | Platform |
-|---|---|
-| Frontend | Vercel |
-| Backend | Render |
-| Database | MongoDB Atlas |
-
-Set environment variables on each platform before deploying.
-
----
-
 ## Folder Structure
 ai-study-assistant/
 ├── backend/
