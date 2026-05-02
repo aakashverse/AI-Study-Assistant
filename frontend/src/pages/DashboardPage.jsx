@@ -12,8 +12,7 @@ export default function DashboardPage() {
   const [text, setText] = useState("");
   const [result, setResult] = useState(null);   // null = untouched, "" = cleared
   const [activeTab, setActiveTab] = useState("summarize");
-  const [isLoading, setIsLoading] = useState(false); // ✅ local state, not RTK's
-
+  const [isLoading, setIsLoading] = useState(false); 
   const [summarize] = useSummarizeMutation();
   const [generateQuestions] = useGenerateQuestionsMutation();
 
@@ -34,7 +33,7 @@ export default function DashboardPage() {
       console.error(err);
       setResult("Error: " + (err?.data?.message || "Something went wrong."));
     } finally {
-      setIsLoading(false); // ✅ always runs — success or failure
+      setIsLoading(false); 
     }
   };
 
@@ -50,7 +49,7 @@ export default function DashboardPage() {
 
       <div className="max-w-5xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        {/* ── Input Panel ── */}
+        {/*Input Panel  */}
         <div className="bg-white rounded-xl p-6 shadow-sm flex flex-col gap-4">
           <h2 className="text-base font-semibold text-gray-800">Your notes</h2>
           <hr/>
